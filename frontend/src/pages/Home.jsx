@@ -3,6 +3,7 @@ import React from "react";
 import heroImg01 from "../assets/images/hero-img01.png";
 import heroImg02 from "../assets/images/hero-img02.png";
 import heroImg03 from "../assets/images/hero-img03.png";
+import ServiceList from "../components/Services/ServiceList";
 
 const Home = () => {
   return(
@@ -67,9 +68,22 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* hero Section end */} 
-      </>
-    
+      {/* hero Section end */} 
+
+      {/* =========== services section ==============*/}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our medical services</h2>
+            <p className="text_para text-center">World-class care for everyone. Our health system offers unmatched,  expert health care.
+            </p>
+          </div>
+
+          <ServiceList/> 
+        </div>
+      </section>
+      {/* =========== services section ==============*/}
+    </> 
   );  
 };
 
