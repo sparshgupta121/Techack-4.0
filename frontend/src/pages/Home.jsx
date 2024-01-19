@@ -4,13 +4,13 @@ import heroImg01 from "../assets/images/hero-img01.png";
 import heroImg02 from "../assets/images/hero-img02.png";
 import heroImg03 from "../assets/images/hero-img03.png";
 import ServiceList from "../components/Services/ServiceList";
+import featureImg from "../assets/images/feature-img.png";
 
 const Home = () => {
   return(
     <>
 
       {/* hero Section */}
-       
         <section className="hero_section pt-[60px] 2xl:h-[800px]">
           <div className="container">
             <div className="flex flex-col lg:flex-row gap-[90px] items-center justify-between">
@@ -82,7 +82,43 @@ const Home = () => {
           <ServiceList/> 
         </div>
       </section>
-      {/* =========== services section ==============*/}
+      {/* =========== services section end ==========*/}
+
+      {/* =========== features section ==============*/}
+      <section>
+        <div className="container">
+          <div className="flex items-center justify-between flex-col lg:flex-row">
+
+            {/* ========= features section ============*/}
+            <div className="xl:w-[670px]">
+              <h2 className="heading">Get virtual treatment <br/> anytime.
+              </h2>
+
+              <ul className="pl-4">
+                <li className="text_para">
+                  1. Schedule the appointment directly.
+                </li>
+                <li className="text_para">
+                  2. Search for your physician here, and contact their office.
+                </li>
+                <li className="text_para">
+                  3. View our physicians who are accepting new patients, use the online scheduling tool to select an appointment time.
+                </li>
+              </ul>
+              <Link to="/">
+                <button className="btn">Learn More</button>
+              </Link>
+            </div>
+
+            {/* ============ feature img ============== */}
+            <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
+              <img src={featureImg} className="w-3/4" alt="" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+      {/* =========== features section end ===========*/}
     </> 
   );  
 };
