@@ -15,6 +15,7 @@ import icon02 from "../assets/images/icon02.png"
 import icon03 from "../assets/images/icon03.png"
 import {Link} from "react-router-dom";
 import {BsArrowRight} from "react-icons/bs";
+import DoctorList from "../components/Doctors/DoctorList";
 // import Testimonial from "../components/testimonial/testimonial";
 
 
@@ -240,6 +241,24 @@ const Home = () => {
         </div>
       </section>
       {/* =========== features section end ===========*/}
+
+      {/* our great doctors */}
+
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Great doctors
+           </h2>
+           <p className=" text_para text-center">World class care for everyone. our health system offers unmatched, expert health care.
+           </p>
+          </div>
+
+          <DoctorList />
+
+        </div>
+      </section>
+
+      {/* our great doctors ends */}
     
       {/* =============== faq section ================*/}
       <section>
