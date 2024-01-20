@@ -1,90 +1,48 @@
-import { formateDate } from "../../utilis/formateDate";
-
 const AmbulanceAbout = () => {
   return (
+<div>
 
-    <div>
-        
+
         <div>
             <h3 className="text-[20px] leading-[30px] text-headingColor font-semibold flex items-center gap-2">
-                About of
+                About
                <span className="text-irisBlueColor font-bold text-[24px] leading-9">
-                    Mashoor Gulati
+               Basic Life Support Ambulance
+
                 </span> 
             </h3>
             <p className="text_para">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum labore facilis reprehenderit aut! Officiis molestias qui quod quisquam optio, aperiam, nostrum corrupti nesciunt nulla numquam, expedita voluptas! Enim laboriosam unde nihil iste architecto. Vel fuga assumenda atque quisquam ex, repellendus quia hic ut ab. Voluptatibus nulla suscipit temporibus non quae!
+            Basic Life Support Ambulance is commonly known as BLS ambulance and it provides basic life support to the patient or senior aboard. Equipped with the latest medical equipment such as an automatic external defibrillator, blood pressure monitoring equipment, Pulse Oximetry and Oxygen delivery services combined with competent nurses to assist patients who are not physically and emotionally stable. <br /><br />Basic life support ambulances are typically emergency ambulances and aid the necessary medical support during the transit till the patient is transported to the hospital.
             </p>
         </div>
 
-        <div className="mt-12 ">
-            <h3 className="text-[20px] leading-[30px] text-headingColor font-semibold">
-                Education
-            </h3>
-
-            <ul className="pt-4 md:p-5">
-                <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
-                    <div>
-                        <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
-                        {formateDate("09-13-2014")} - {formateDate("09-13-2016")} 
-                        </span>
-                        <p className="text-[16px] leading-6 font-medium text-textColor">
-                            PHD in Surgeon
-                        </p>
-                    </div>
-
-                    <p className="text-[14px] leading-5 font-medium text-textColor">
-                        Nilam Hospital, Rajpura, Punjab
-                    </p>        
-                </li>
-
-                <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
-                    <div>
-                        <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
-                           {formateDate("07-04-2010")} - {formateDate("08-03-2014")} 
-                        </span>
-                        <p className="text-[16px] leading-6 font-medium text-textColor">
-                            PHD in Surgeon
-                        </p>
-                    </div>
-
-                    <p className="text-[14px] leading-5 font-medium text-textColor">
-                        Nilam Hospital, Rajpura, Punjab
-                    </p>        
-                </li>
-            </ul>
-        </div>
-
+       
         <div className="mt-12">
             <h3 className="text-[20px] leading-[30px] text-headingColor font-semibold">
-                Experience
+                Insights
             </h3>
 
             <ul className="grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5">
                 <li className="p-4 rounded bg-[#fff9ea]">
-                    <span className="text-yellowColor text-[15px] leading-6 font-semibold">
-                        {formateDate("07-04-2010")} - {formateDate("08-13-2014")} 
+                    <span className="text-yellowColor text-[15px] leading-6 font-semibold text-lg">
+                        800+
                     </span>
                     <p className="text-[16px] leading-6 font-medium text-textColor">
-                        Sr. Surgeon
+                        Life Assisted
                     </p>
 
-                    <p className="text-[14px] leading-5 font-medium text-textColor">
-                        Nilam Hospital, Rajpura, Punjab
-                    </p> 
+                
                 </li>
 
                 <li className="p-4 rounded bg-[#fff9ea]">
-                    <span className="text-yellowColor text-[15px] leading-6 font-semibold">
-                        {formateDate("07-04-2010")} - {formateDate("08-13-2014")} 
+                    <span className="text-yellowColor text-[15px] leading-6 font-semibold text-lg">
+                        Quick Response Time
                     </span>
                     <p className="text-[16px] leading-6 font-medium text-textColor">
-                        Sr. Surgeon
+                        Less than 15min.
                     </p>
 
-                    <p className="text-[14px] leading-5 font-medium text-textColor">
-                        Nilam Hospital, Rajpura, Punjab
-                    </p> 
+                
                 </li>
             </ul>
         </div>

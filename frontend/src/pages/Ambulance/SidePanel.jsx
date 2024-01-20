@@ -23,7 +23,7 @@ const SidePanel = () => {
 
     // Assuming successful submission for demonstration
     setPopupStatus('success');
-    setPopupMessage('Appointment fixed successfully!');
+    setPopupMessage('Ambulance Booked Succesfully :)');
   };
 
   const closePopup = () => {
@@ -43,12 +43,12 @@ const SidePanel = () => {
       </div>
 
 
-      <form className="mt-4">
-        <p className="text_para mt-0 font-semibold text-headingColor">
+      <form className="mt-4 ">
+        <p className="text_para mt-4 font-semibold text-headingColor">
           User Information:
         </p>
 
-        <div className="mb-3">
+        <div className="mb-3 mt-6">
           <label htmlFor="name" className="block text-textColor text-sm font-medium mb-1">
             Name:
           </label>
@@ -110,7 +110,7 @@ const SidePanel = () => {
           onClick={handleFormSubmit}
           className="btn px-2 w-full rounded-md"
         >
-          Book Appointment
+          Book Ambulance
         </button>
       </form>
 
@@ -119,7 +119,7 @@ const SidePanel = () => {
         <div className={`fixed inset-0 flex items-center justify-center z-50 ${popupStatus === 'success' ? 'bg-green-500' : 'bg-blue-500'}`}>
           <div className="bg-white p-5 rounded-md">
             <p className={`font-bold text-lg mb-3 ${popupStatus === 'success' ? 'text-green-700' : 'text-blue-700'}`}>
-              {popupStatus === 'success' ? 'Appointment Fixed!' : 'XYZ Function'}
+              {popupStatus === 'success' ? 'Booking Success!' : 'XYZ Function'}
             </p>
             <p className="text-textColor">{popupMessage}</p>
 

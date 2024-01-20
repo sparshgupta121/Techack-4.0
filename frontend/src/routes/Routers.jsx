@@ -5,7 +5,6 @@ import Signup from "../pages/Signup";
 import Contact from "../pages/Contact";
 import Doctors from "../pages/Doctors/Doctors";
 import DoctorDetails from "../pages/Doctors/DoctorDetails";
-import Ambulance from "../pages/Ambulance/Ambulance";
 import AmbulanceDetails from "../pages/Ambulance/AmbulanceDetails";
 
 
@@ -15,7 +14,6 @@ const Routers = () => {
   return <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/home" element={<Home/>} />
-    <Route path="/ambulancebook" element={<Ambulance/>} />
     <Route path="/ambulance/:id" element={<AmbulanceDetails/>} />
     <Route path="/doctors" element={<Doctors/>} />
     <Route path="/doctors/:id" element={<DoctorDetails/>} />

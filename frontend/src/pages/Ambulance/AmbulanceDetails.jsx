@@ -4,6 +4,7 @@ import starIcon from "../../assets/images/Star.png";
 import AmbulanceAbout from "./AmbulanceAbout";
 import Feedback from "./Feedback";
 import SidePanel from "./SidePanel";
+import imgamb from "../../assets/images/bls2.jpg";
 
 
 const AmbulanceDetails = () => {
@@ -17,15 +18,15 @@ const AmbulanceDetails = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-5">
               <figure className="max-w-[200px] max-h-[200px]">
-                <img src={doctorImg} alt="" className="w-full"/>
+                <img src={imgamb} alt="" className="w-full"/>
               </figure>    
 
               <div>
-                <span className="bg-[#CCF0F3] text-irisBlueColor py-1 px-6 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text-[16px] lg:leading-7 font-semibold rounded">
-                  Surgeon
+                <span className="bg-[red] text-white py-1 px-6 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text-[16px] lg:leading-7 font-semibold rounded">
+                  Emergency
                 </span>
                 <h3 className="text-headingColor text-[22px] leading-9 mt-3 font-bold">
-                  Ajay Khurana
+                Basic Life Support Ambulance.
                 </h3>
                 <div className="flex items-center gap-[6px]"> 
                   <span className="flex items-center gap-[6px] text-[14px] leading-5 lg:text-[16px]
@@ -37,10 +38,7 @@ const AmbulanceDetails = () => {
                   </span>
                 </div>
 
-                <p className="text_para text-[14px] leading-6 md:text-[15px] lg:max-w-[390px]">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                  Fugit, optio.
-                </p>
+            
 
               </div>
             </div>
