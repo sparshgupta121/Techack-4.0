@@ -1,5 +1,7 @@
 import React from "react";
-
+import doctor from "../assets/images/doctor.webp"
+import Ambulance from "../assets/images/ambulance.jpg";
+import Hospital from "../assets/images/hospital.jpg";
 import heroImg01 from "../assets/images/hero-img01.png";
 import heroImg02 from "../assets/images/hero-img02.png";
 import heroImg03 from "../assets/images/hero-img03.png";
@@ -28,14 +30,14 @@ const Home = () => {
               {/* hero content */}
               <div>
                 <div className="lg:w-[570px]">
-                  <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]">
-                    We help patients live a healthy, longer life.
+                  <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[50px] md:leading-[70px]">
+                    We Help Patients Live a Healthy, Longer Life.
                   </h1>
                   <p className="text_para">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore corrupti nihil animi minus omnis ut eveniet temporibus officiis nostrum, voluptatum perspiciatis! Harum voluptatibus molestias, repudiandae suscipit in iusto ut beatae?
+                  Discover seamless healthcare access at your fingertips. From scheduling doctor appointments to requesting emergency ambulance services, our platform simplifies the way you engage with healthcare. Enjoy real-time updates, user-friendly interfaces, and a comprehensive network of healthcare providers. Your well-being, just a click away."
                   </p>
 
-                  <button className="btn">Request an Appointment </button>
+                  <button className="btn">Book an Ambulance </button>
                 </div>
 
                 {/* hero counter */}
@@ -68,11 +70,11 @@ const Home = () => {
 
               <div className="flex gap-[30px] justify-end">
                 <div className="mt-[30px]">
-                  <img className="w-full" src={heroImg01} alt="" />
+                  <img className=" rounded-lg w-full mb-[30px]" src={Ambulance} alt="" />
                 </div>
                 <div>
-                  <img src={heroImg02} alt="" className="w-full mb-[30px]" />
-                  <img src={heroImg03} alt="" className="w-full"/>
+                  <img src={heroImg01} alt="" className="w-full mb-[30px]" />
+                  <img src={Hospital} alt="" className="rounded-md w-full mb-[30px] border-"/>
                 </div>
               </div>
             </div>
@@ -96,7 +98,7 @@ const Home = () => {
 
             <div className="py-[30px] px-5 ">
               <div className="flex items-center justify-center">
-                <img src={icon01} alt="" />
+                <img src={icon01} alt="" className="h-28 w-28"/>
               </div>
 
               <div className="mt-[30px]">
@@ -105,7 +107,7 @@ const Home = () => {
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic
                 </p>
 
-                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] MT-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
+                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[20px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
                   <BsArrowRight className="group-hover:text-white w-6 h-5"/>
                 </Link>
 
@@ -115,16 +117,16 @@ const Home = () => {
 
             <div className="py-[30px] px-5 ">
               <div className="flex items-center justify-center">
-                <img src={icon02} alt="" />
+                <img src={icon02} alt="" className="h-28 w-28"/>
               </div>
 
               <div className="mt-[30px]">
-                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Find a Location
+                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Book an Ambulance
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic
                 </p>
 
-                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] MT-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
+                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[20px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
                   <BsArrowRight className="group-hover:text-white w-6 h-5"/>
                 </Link>
 
@@ -133,7 +135,7 @@ const Home = () => {
 
             <div className="py-[30px] px-5 ">
               <div className="flex items-center justify-center">
-                <img src={icon03} alt="" />
+                <img src={icon03} alt="" className="h-28 w-28" />
               </div>
 
               <div className="mt-[30px]">
@@ -142,7 +144,7 @@ const Home = () => {
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic
                 </p>
 
-                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] MT-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
+                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[20px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
                   <BsArrowRight className="group-hover:text-white w-6 h-5"/>
                 </Link>
 
@@ -180,22 +182,22 @@ const Home = () => {
 
             {/* ========= features section ============*/}
             <div className="xl:w-[670px]">
-              <h2 className="heading">Get virtual treatment <br/> anytime.
+              <h2 className="text-[30px] leading-9 text-headingColor font-[700]">Get Best Treatment during Emergency.
               </h2>
 
               <ul className="pl-4">
                 <li className="text_para">
-                  1. Schedule the appointment directly.
+                  1.Quick Book an Ambulance.
                 </li>
                 <li className="text_para">
-                  2. Search for your physician here, and contact their office.
+                  2. Search for your Doctor here,  Schedule the appointment directly.
                 </li>
                 <li className="text_para">
-                  3. View our physicians who are accepting new patients, use the online scheduling tool to select an appointment time.
+                  3. Get to the Hospital, get Treatment on Priority during Emergencies.
                 </li>
               </ul>
               <Link to="/">
-                <button className="btn">Learn More</button>
+                <button className="btn">Book Ambulance Now</button>
               </Link>
             </div>
 
@@ -211,23 +213,23 @@ const Home = () => {
                       Tue, 24
                     </p>
                     <p className="text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-textColor font-[400]">
-                      10:00 AM
+                      10:00 PM
                     </p>
                   </div>
-                  <span className="w-5 h-5 lg:w-[34px] lg:h-[34px] flex items-center justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3 lg:px-[9px]">
+                  <span className="w-12 h-12 ">
                     <img src={videoIcon} alt="" />
                   </span>
                 </div>
 
-                <div className="w-[65px] lg:w-[96px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500] mt-2 lg:mt-4 rounded-full">
-                  Consultation
-                </div>
+                <div className="w-[80px] lg:w-[110px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500]  rounded-full flex items-center">
+  Emergency
+</div>
+
 
                 <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
                   <img src={avatarIcon} alt="" />
                   <h4 className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor">
-                    Wayne Collins
-                  </h4>
+                    Dr. Hansraj Hathi </h4>
                 </div>
 
               </div>
