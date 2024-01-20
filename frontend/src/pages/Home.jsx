@@ -17,7 +17,7 @@ import icon02 from "../assets/images/icon02.png"
 import icon03 from "../assets/images/icon03.png"
 import {Link} from "react-router-dom";
 import {BsArrowRight} from "react-icons/bs";
-import DoctorList from "../components/Doctors/DoctorList";
+// import DoctorList from "../components/Doctors/DoctorList";
 // import Testimonial from "../components/testimonial/testimonial";
 
 
@@ -246,7 +246,7 @@ const Home = () => {
 
       {/* our great doctors */}
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">Our Great doctors
@@ -258,7 +258,7 @@ const Home = () => {
           <DoctorList />
 
         </div>
-      </section>
+      </section> */}
 
       {/* our great doctors ends */}
     
