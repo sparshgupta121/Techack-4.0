@@ -61,7 +61,7 @@ const Home = () => {
                     <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">250+
                     </h2>
                     <span className="w-[100px] h-2 bg-irisBlueColor rounded-full block mt-[-14px]"></span>
-                    <p className="text_para">Partnerd Hospitals </p>
+                    <p className="text_para">partnered Hospitals </p>
                   </div>
                 </div>
               </div>
@@ -244,8 +244,8 @@ const Home = () => {
       {/* =============== faq section ================*/}
       <section>
         <div className="container">
-          <div className="flex justify-between gap-[50px] lg:gap-0">
-            <div className="w-1/2 hidden md:block">
+          <div className="flex justify-center gap-[50px] lg:gap-20">
+            <div className="w-1/4 hidden md:block">
               <img src={faqImg} alt="" />
             </div>
 
