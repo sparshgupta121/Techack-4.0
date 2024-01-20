@@ -1,7 +1,7 @@
 import User from "../models/UserSchema.js";
-import Doctor from '..models/DoctorSchema.js'
-import jwt from 'jasonwebtoken'
-import bcrypt from 'bcrypt.js'
+import Doctor from '../models/DoctorSchema.js'
+// import jwt from 'jasonwebtoken'
+import bcrypt from 'bcrypt'
 
 export const register = async(req,res)=>{
     const {email,password,name,role,photo,gender} = req.body;
