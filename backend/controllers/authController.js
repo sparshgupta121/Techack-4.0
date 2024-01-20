@@ -4,14 +4,14 @@ import jwt from 'jasonwebtoken'
 import bcrypt from 'bcrypt.js'
 
 export const register = async(req,res)=>{
-    const {email,password,name,role,photo,gender} = req.body
+    const {email,password,name,role,photo,gender} = req.body;
     try {
         let user = null
         if(role == 'patient'){
-            user = User.findOne({ email})
+            user = await User.findOne({ email})
         }
         else if(role=='doctor'){
-            user = Doctor.findOne({ email})
+            user = await Doctor.findOne({ email})
         }
         if(user){
             return res.status(400).json({ message:'user already exists'})
