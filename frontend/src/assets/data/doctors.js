@@ -33,4 +33,14 @@ export const doctors = [
     totalPatients: 1500,
     hospital: "Fortis Hospital.",
   },
+  {
+    id: "04",
+    name: "Dr. Rajat Rathi",
+    specialization: "Cardispecialist",
+    avgRating: 5,
+    totalRating: 310,
+    photo: doctorImg03,
+    totalPatients: 1500,
+    hospital: "Apollo Hospital.",
+  }
 ];
