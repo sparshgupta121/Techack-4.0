@@ -9,6 +9,11 @@ const navLinks = [
     path:'/home',
     display: 'Home'
   },
+
+  {
+    path:'/ambulance/:id',
+    display: 'Book an Ambulance'
+  },
   {
     path:'/doctors',
     display: 'Find a Doctor'

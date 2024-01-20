@@ -41,7 +41,8 @@ const Home = () => {
                   Discover seamless healthcare access at your fingertips. From scheduling doctor appointments to requesting emergency ambulance services, our platform simplifies the way you engage with healthcare. Enjoy real-time updates, user-friendly interfaces, and a comprehensive network of healthcare providers. Your well-being, just a click away."
                   </p>
 
-                  <button className="btn">Book an Ambulance </button>
+                  <Link to="/ambulance/:id">
+                  <button className="btn">Book an Ambulance </button> </Link>
                 </div>
 
                 {/* hero counter */}
@@ -130,7 +131,7 @@ const Home = () => {
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic
                 </p>
 
-                <Link to= '/doctors' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[20px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
+                <Link to= '/ambulance/:id' className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[20px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none" >
                   <BsArrowRight className="group-hover:text-white w-6 h-5"/>
                 </Link>
 
