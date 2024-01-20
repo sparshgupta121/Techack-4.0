@@ -1,6 +1,8 @@
 import doctorImg01 from "../images/doctor-img01.png";
 import doctorImg02 from "../images/doctor-img02.png";
 import doctorImg03 from "../images/doctor-img03.png";
+import doctorImg04 from "../images/hero-img02.png";
+
 
 export const doctors = [
   {
@@ -39,7 +41,7 @@ export const doctors = [
     specialization: "Cardispecialist",
     avgRating: 5,
     totalRating: 310,
-    photo: doctorImg03,
+    photo: doctorImg04,
     totalPatients: 1500,
     hospital: "Apollo Hospital.",
   }
